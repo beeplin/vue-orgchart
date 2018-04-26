@@ -17,12 +17,14 @@ npm i @c42/vue-orgchart
 ```js
   {
     data: { type: Object, required: true }, // Data to build structure of orgchart. see below.
+    vue: { type: Function, required: true }, // Vue constructor used to render nodes.
     nodeId: { type: String, default: 'id' }, // It sets one property of data as unique identifier of every orgchart node.
     direction: { type: String, default: 't2b' }, // The available values are t2b(implies "top to bottom", it's default value), b2t(implies "bottom to top"), l2r(implies "left to right"), r2l(implies "right to left").
     depth: { type: Number, default: 999 }, // It indicates the level that at the very beginning orgchart is expanded to.
     verticalDepth: { type: Number, default: 999 }, // Users can make use of this option to align the nodes vertically from the specified depth.
     exportButton: { type: Boolean, default: true }, // It enable the export button for orgchart.
     exportFilename: { type: String, default: 'OrgChart' }, // It's filename when you export current orgchart as a picture.
+    htmlToCanvas: { type: Function, default: () => () => {} }, // html2canvas to convert html to picture for export.
 
     toggleSiblingsResp: { type: Boolean, default: true }, // Once enable this option, users can show/hide left/right sibling nodes respectively by clicking left/right arrow.
     pan: { type: Boolean, default: true }, // Users could pan the orgchart by mouse drag&drop if they enable this option.

@@ -5,8 +5,8 @@ module.exports = {
   entry: path.resolve(`${__dirname}/src/OrgChart.vue`),
   output: {
     path: path.resolve(`${__dirname}/lib/`),
-    filename: 'vue-orgchart.js',
-    library: 'vue-orgchart',
+    filename: 'index.js',
+    library: 'VueOrgChart',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },

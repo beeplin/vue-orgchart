@@ -2,6 +2,8 @@
   <div _id="app">
     <OrgChart ref="orgChart"
               :data="chartData"
+              :vue="Vue"
+              :html-to-canvas="html2canvas"
               node-id="_id"
               container-class="orgchart-container"
               chart-class="orgchart-chart"
@@ -30,7 +32,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import createWalk from 'tree-walk'
+import html2canvas from 'html2canvas'
+import 'font-awesome/css/font-awesome.min.css'
+import './orgchart.css'
 
 const walk = createWalk(node => node.children)
 
@@ -75,8 +81,10 @@ export default {
     OrgChart: () => import('./OrgChart.vue'),
   },
   data: () => ({
-    idCount: 6,
     chartData: data1,
+    idCount: 6,
+    html2canvas,
+    Vue,
   }),
   mounted() {
     setTimeout(() => {
