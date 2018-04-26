@@ -67,6 +67,28 @@ onDrag = ({ targetId, sourceId, destinationId }) => {
 }
 ```
 
+### scoped slot
+
+You can use scoped slot to customize your node. Example:
+
+```html
+  <OrgChart :data="chartData"
+            :vue="Vue"
+            :html-to-canvas="html2canvas"
+            node-id="_id"
+            ...
+            @drag="updateDataOnDrag">
+    <div slot-scope="{ nodeData }">  <!-- nodeData is the data of the coresponding node -->
+      <div class="title">{{ nodeData.name }}</div>
+      <div @click="addChildNode(nodeData, $event)">add child</div>
+      <div @click="addSiblingNode(nodeData, $event)">add sibling</div>
+      <div @click="removeNode(nodeData, $event)">remove</div>
+      <div class="content">this is #{{ nodeData._id }}
+      </div>
+    </div>
+  </OrgChart>
+```
+
 ### add/remove/move nodes
 
 Just modify the data, and the orgchart will update. See `src/App.vue` for a complete example.

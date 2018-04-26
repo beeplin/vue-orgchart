@@ -1,7 +1,6 @@
 <template>
   <div _id="app">
-    <OrgChart ref="orgChart"
-              :data="chartData"
+    <OrgChart :data="chartData"
               :vue="Vue"
               :html-to-canvas="html2canvas"
               node-id="_id"
