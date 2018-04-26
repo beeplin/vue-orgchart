@@ -1,0 +1,10 @@
+/.nuxt
+/.nyc_output
+/.quasar
+/coverage
+/data
+/dist
+/lib
+/node_modules
+/test/unit/coverage
+/test/e2e/reports

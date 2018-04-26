@@ -1,0 +1,11 @@
+{
+  "include": ["src/**/*", "tests/**/*"],
+  "compilerOptions": {
+    // "checkJs": true,
+    // "target": "es2017",
+    // "module": "commonjs",
+    // "allowSyntheticDefaultImports": true,
+    // "baseUrl": ".",
+    // "paths": {}
+  }
+}
