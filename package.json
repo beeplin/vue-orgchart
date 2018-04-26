@@ -2,10 +2,7 @@
   "name": "@c42/vue-orgchart",
   "version": "0.2.0",
   "description": "A Vue component that wraps orgchart.js and supports scoped slots to customize nodes in chart",
-  "keywords": [
-    "vue",
-    "orgchart"
-  ],
+  "keywords": ["vue", "orgchart"],
   "homepage": "https://github.com/beeplin/vue-orgchart",
   "bugs": {
     "url": "https://github.com/beeplin/vue-orgchart/issues"
@@ -14,9 +11,7 @@
   "author": {
     "name": "Beep Lin"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "main": "lib/index.js",
   "repository": {
     "type": "git",
@@ -73,27 +68,16 @@
     "yarn": ">= 1.6.0"
   },
   "babel": {
-    "presets": [
-      "@vue/app"
-    ]
+    "presets": ["@vue/app"]
   },
   "postcss": {
     "plugins": {
       "autoprefixer": {}
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json",
-      "vue"
-    ],
+    "moduleFileExtensions": ["js", "jsx", "json", "vue"],
     "transform": {
       "^.+\\.vue$": "vue-jest",
       "^.+\\.jsx?$": "babel-jest"
@@ -101,11 +85,6 @@
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/src/$1"
     },
-    "snapshotSerializers": [
-      "jest-serializer-vue"
-    ]
-  },
-  "gitHooks": {
-    "pre-commit": "npm run lint"
+    "snapshotSerializers": ["jest-serializer-vue"]
   }
 }

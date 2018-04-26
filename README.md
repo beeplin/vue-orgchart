@@ -61,3 +61,11 @@ onDrag = ({ targetId, sourceId, destinationId }) => {
 ### add/remove/move nodes
 
 Just modify the data, and the orgchart will update. See `src/App.vue` for a complete example.
+
+### css
+
+```js
+import '@c42/vue-orgchart/lib/orgchart.css'
+```
+
+Or use your customized version.
