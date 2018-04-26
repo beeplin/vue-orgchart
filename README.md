@@ -4,6 +4,15 @@ A Vue component that wraps [orgchart.js](https://github.com/dabeng/OrgChart.js) 
 
 `<ul>` support and ajax support are dropped since now you can just fetch data with your favorite ajax library like `axios`, `fetch` etc. and then pass data to this component. It will automatically repaint on data change.
 
+## see demo
+
+Clone this repo and run:
+
+```bash
+yarn
+yarn dev
+```
+
 ## install
 
 ```bash
