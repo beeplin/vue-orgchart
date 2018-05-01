@@ -77,7 +77,7 @@ module.exports = {
       },
     ],
     'vue/order-in-components': [
-      'error',
+      2,
       {
         order: [
           'el',
